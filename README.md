@@ -34,7 +34,7 @@ if you run your node as docker you can use this to create `ledgerstate.json`.
 sudo docker run --rm -ti -e CARDANO_NODE_SOCKET_PATH=/ipc/node.socket -v pool_relay1-ipc:/ipc --entrypoint /bin/bash inputoutput/cardano-node -c "cardano-cli query ledger-state --mainnet" > ledgerstate/ledgerstate.json
 ```
 
-the leaderlog.json has to be placed in the mounted `ledgerstate` directory.
+the ledgerstate.json has to be placed in the mounted `ledgerstate` directory.
 
 ### generate leaderlog
 
