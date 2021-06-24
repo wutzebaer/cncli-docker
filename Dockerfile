@@ -7,6 +7,6 @@ RUN apt-get install -y automake build-essential pkg-config libffi-dev libgmp-dev
 RUN git clone --recurse-submodules https://github.com/AndrewWestberg/cncli
 
 WORKDIR "cncli"
-RUN git checkout v2.1.0
+RUN git checkout v3.1.0
 RUN cargo install --path . --force      
 RUN cncli --version
